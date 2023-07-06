@@ -1,0 +1,31 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-request-hook"
+version = "0.0.1"
+description = "Django middlewares to track request logs"
+readme = "README.md"
+authors = [{ name = "joneai", email = "mxjoneai@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["django", "request log", "hook", "api log track", "middleware"]
+dependencies = [
+    "Django >= 4.2",
+    "requests >= 2.31.0",
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/tacnaci/django-request-hook"
+
+[tool.setuptools]
+packages = ["django_request_hook"]
