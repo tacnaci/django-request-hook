@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "django-request-hook"
-version = "0.0.1"
+version = "0.0.2"
 description = "Django middlewares to track request logs"
 readme = "README.md"
 authors = [{ name = "joneai", email = "mxjoneai@gmail.com" }]
@@ -16,10 +16,10 @@ classifiers = [
 ]
 keywords = ["django", "request log", "hook", "api log track", "middleware"]
 dependencies = [
-    "Django >= 4.2",
-    "requests >= 2.31.0",
+    "Django >= 2.0.0",
+    "requests",
 ]
-requires-python = ">=3.9"
+requires-python = ">=3"
 
 [project.optional-dependencies]
 dev = ["pytest"]
