@@ -31,7 +31,7 @@ class LogTracker:
 
         response = self.get_response(request)
         
-        response_content = response.content.decode()
+        response_content = '' if response.streaming else response.content.decode()
         try:
             response_content = json.loads(response_content)
         except:
